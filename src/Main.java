@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Jogador jogador1 = new Jogador("Computador");
-        Jogador jogador2 = new Jogador("Brain");
+        Jogador jogador2 = new Jogador(args[0]);
         Jogo jogo = new Jogo(jogador1, jogador2);
         System.out.println("Jogo básico de tênis\nPressione enter para lançar a bola");
         Scanner teclado = new Scanner(System.in);
