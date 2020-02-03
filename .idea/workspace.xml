@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f958417a-709f-4f05-beca-ec75f5c6d751" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="f958417a-709f-4f05-beca-ec75f5c6d751" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+>>>>>>> task-PossibilitarOLancamentoAutomaticoPeloComputador
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +65,8 @@
       <workItem from="1580412228620" duration="7479000" />
       <workItem from="1580473274472" duration="20694000" />
       <workItem from="1580504162701" duration="109000" />
-      <workItem from="1580731435411" duration="976000" />
+      <workItem from="1580731435411" duration="3265000" />
+      <workItem from="1580752868128" duration="2822000" />
     </task>
     <servers />
   </component>
@@ -70,10 +78,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="599" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580496166501" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1580412191554">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1580749270188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580412191554" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580749270188" />
     <state x="681" y="261" width="570" height="524" key="StructurePopup" timestamp="1580732075559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

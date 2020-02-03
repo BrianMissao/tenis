@@ -16,24 +16,32 @@ public class Main {
         Scanner teclado = new Scanner(System.in);
         jogo.sorteiaQuemComeca();
         System.out.println(jogo.getJogadorSorteado().getNome() + " ganhou a bola.\n");
-        while (teclado.hasNextLine()) {
-            switch (teclado.nextLine()) {
-                case "":
-                    jogo.turno();
-                    break;
-                case "s":
-                    System.out.println("Pontuações atuais:\n" + jogador1.getNome() + ": " + jogador1.getPontos() + ";\n" + jogador2.getNome() + ": " + jogador2.getPontos() + ".");
-                    System.out.println(jogo.getJogadorSorteado().getNome() + " vai lançar a bola.\n");
-                    continue;
-                default:
-                    System.out.println("Opção inválida.");
-                    continue;
-                case "q":
-                    sair();
-                    break;
+        while (true) {
+            if (jogo.getJogadorSorteado() == jogador1) {
+                jogo.turno();
+                jogo.sorteiaProximoJogador();
+                System.out.println(jogo.getJogadorSorteado().getNome()+" ganhou a bola.");
+                continue;
             }
-            jogo.sorteiaProximoJogador();
-            System.out.println(jogo.getJogadorSorteado().getNome() + " ganhou a bola.");
+            else {
+                switch (teclado.nextLine()) {
+                    case "":
+                        jogo.turno();
+                        break;
+                    case "s":
+                        System.out.println("Pontuações atuais:\n" + jogador1.getNome() + ": " + jogador1.getPontos() + ";\n" + jogador2.getNome() + ": " + jogador2.getPontos() + ".");
+                        System.out.println(jogo.getJogadorSorteado().getNome() + " vai lançar a bola.\n");
+                        continue;
+                    default:
+                        System.out.println("Opção inválida.");
+                        continue;
+                    case "q":
+                        sair();
+                        break;
+                }
+                jogo.sorteiaProximoJogador();
+                System.out.println(jogo.getJogadorSorteado().getNome() + " ganhou a bola.");
+            }
             if (jogador1.getPontos() == 40 || jogador2.getPontos() == 40) {
                 break;
             }
@@ -45,6 +53,12 @@ public class Main {
     private static void jogaUltimoTurno() {
         Scanner teclado = new Scanner(System.in);
         while (true) {
+            if (jogo.getJogadorSorteado() == jogador1) {
+                jogo.turno();
+                jogo.sorteiaProximoJogador();
+                System.out.println(jogo.getJogadorSorteado().getNome()+" ganhou a bola.");
+                break;
+            }
             switch (teclado.nextLine()) {
                 case "":
                     jogo.turno();
@@ -75,20 +89,28 @@ public class Main {
         System.out.println(jogo.getJogadorSorteado().getNome() + " Está em vantagem!");
         Scanner teclado = new Scanner(System.in);
         while (true) {
-            switch (teclado.nextLine()) {
-                case "":
-                    jogo.turno();
-                    break;
-                case "s":
-                    System.out.println("Pontuações atuais:\n" + jogador1.getNome() + ": " + jogador1.getPontos() + ";\n" + jogador2.getNome() + ": " + jogador2.getPontos() + ".");
-                    System.out.println(jogo.getJogadorSorteado().getNome() + " está em vantagem!");
-                    continue;
-                default:
-                    System.out.println("Opção inválida.");
-                    continue;
-                case "q":
-                    sair();
-                    break;
+            if (jogo.getJogadorSorteado() == jogador1) {
+                jogo.turno();
+                jogo.sorteiaProximoJogador();
+                System.out.println(jogo.getJogadorSorteado().getNome()+" Está em vantagem!");
+                continue;
+            }
+else {
+                switch (teclado.nextLine()) {
+                    case "":
+                        jogo.turno();
+                        break;
+                    case "s":
+                        System.out.println("Pontuações atuais:\n" + jogador1.getNome() + ": " + jogador1.getPontos() + ";\n" + jogador2.getNome() + ": " + jogador2.getPontos() + ".");
+                        System.out.println(jogo.getJogadorSorteado().getNome() + " está em vantagem!");
+                        continue;
+                    default:
+                        System.out.println("Opção inválida.");
+                        continue;
+                    case "q":
+                        sair();
+                        break;
+                }
             }
             if (jogo.getJogadorSorteado().getPontosParaEmpate() > 0) {
                 break;
