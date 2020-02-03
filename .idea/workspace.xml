@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f958417a-709f-4f05-beca-ec75f5c6d751" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tenis/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tenis/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tenis/classes/Jogo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tenis/classes/Jogo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Jogador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/Jogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Jogo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +60,10 @@
       <updated>1580410775887</updated>
       <workItem from="1580410777302" duration="434000" />
       <workItem from="1580412168905" duration="47000" />
-      <workItem from="1580412228620" duration="7193000" />
+      <workItem from="1580412228620" duration="7479000" />
+      <workItem from="1580473274472" duration="20694000" />
+      <workItem from="1580504162701" duration="109000" />
+      <workItem from="1580731435411" duration="976000" />
     </task>
     <servers />
   </component>
@@ -69,10 +71,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="599" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580496166501">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="599" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580496166501" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1580412191554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580412191554" />
+    <state x="681" y="261" width="570" height="524" key="StructurePopup" timestamp="1580732075559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="261" width="570" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1580732075559" />
+    <state x="666" y="138" key="refactoring.ChangeSignatureDialog" timestamp="1580501970470">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="138" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580501970470" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1580410974079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

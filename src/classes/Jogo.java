@@ -12,20 +12,29 @@ public class Jogo {
     public Jogo(Jogador jogador1, Jogador jogador2) {
         this.jogador1 = jogador1;
         this.jogador2 = jogador2;
+        empate = false;
+    }
+
+    public void transformarEsteTurnoEmDesempate() {
+        empate = empate == true ? false : true;
     }
 
     public void turno() {
-        this.jogadorSorteado.lancarBola();
+        if (eEmpate()) {
+            jogadorSorteado.lanceDeEmpate();
+        }
+        else {
+            jogadorSorteado.lancarBola();
+        }
     }
 
     public void sorteiaQuemComeca() {
         this.jogadorSorteado = new Random().nextInt(3) == 1 ? jogador1 : jogador2;
     }
 
-    public void ganhar() {
+    public void definirGanhador() {
         jogadorGanhador = jogador1.getPontos() > jogador2.getPontos() ? jogador1 : jogador2;
     }
-
     public Jogador getJogadorGanhador() {
         return jogadorGanhador;
     }
@@ -37,4 +46,9 @@ public class Jogo {
     public void sorteiaProximoJogador() {
         jogadorSorteado = jogadorSorteado == jogador1 ? jogador2 : jogador1;
     }
+
+    public boolean eEmpate() {
+        return empate;
+    }
+
 }
