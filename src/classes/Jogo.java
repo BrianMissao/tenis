@@ -16,7 +16,7 @@ public class Jogo {
     }
 
     public void transformarEsteTurnoEmDesempate() {
-        empate = empate == true ? false : true;
+        empate = !empate;
     }
 
     public void turno() {
@@ -51,4 +51,8 @@ public class Jogo {
         return empate;
     }
 
+    public void imprimirPontosDoJogador() {
+        System.out.println("Pontuações atuais:\n" + jogador1.getNome() + ": " + jogador1.getPontos() + ";\n" + jogador2.getNome() + ": " + jogador2.getPontos() + ".");
+        System.out.println(getJogadorSorteado().getNome() + " está em vantagem!");
+    }
 }
